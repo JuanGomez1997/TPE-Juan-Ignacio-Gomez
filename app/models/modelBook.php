@@ -25,7 +25,7 @@
             $books = $query->fetchAll(PDO::FETCH_OBJ);
             return $books;
         }
-//----------------------------------------confirmar esto
+//----------------------------------------
         public function selectGenre(){
             $query = $this->db->prepare("SELECT * FROM genero");
             $query->execute();
@@ -54,9 +54,5 @@
             $query->execute([$disponibilidad,$id]);
             
         }
-        //public function editNoAvailability($id){ //saque la disponibilidad
-        //    $query = $this->db->prepare("UPDATE libros SET disponibilidad=0 WHERE id=?");
-        //    $query->execute([$id]);
-        //    
-        //}
+
     }
