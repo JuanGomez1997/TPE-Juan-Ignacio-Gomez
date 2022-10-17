@@ -15,7 +15,7 @@ class LibraryView {
     public function libreryComplete($books){
         $this->smarty->assign('count',count($books));
         $this->smarty->assign('books',$books);
-        $this->smarty->display('listacompleta.tpl');
+        $this->smarty->display('completeList.tpl');
     }
     public function description($librerys){
         $this->smarty->assign('librerys',$librerys);
