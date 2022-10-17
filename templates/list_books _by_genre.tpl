@@ -31,7 +31,7 @@
 
     </td>
         
-      <td><a href='vermas/{$book->id}' type='button' class='btn btn-danger'>Ver mas</a></td>
+      <td><a href='vermas/{$book->id}' type='button' class='btn btn-success'>Ver mas</a></td>
     </tr>
     {/foreach}
   </tbody>

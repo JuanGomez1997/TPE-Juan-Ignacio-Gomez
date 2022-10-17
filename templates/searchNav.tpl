@@ -1,6 +1,6 @@
 {include file="header.tpl"}
 {foreach from=$books item=$book}
-    <h1>LA busqueda fue: {$book->nombre}</h1>
+    <h1>El resultado de la busqueda fue: {$book->nombre}</h1>
 {/foreach}
 
 <table class="table">
@@ -32,7 +32,7 @@
 
             </td>
 
-            <td><a href='vermas/{$book->id}' type='button' class='btn btn-danger'>Ver mas</a></td>
+            <td><a href='vermas/{$book->id}' type='button' class='btn btn-success'>Ver mas</a></td>
         </tr>
     {/foreach}
   </tbody>
